@@ -28,6 +28,20 @@
         };
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        accentO {
+            bindings = <&accent_o>;
+            key-positions = <10 22>;
+        };
+
+        accentI {
+            bindings = <&accent_i>;
+            key-positions = <10 21>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
