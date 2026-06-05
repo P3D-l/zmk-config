@@ -26,6 +26,30 @@
 
             label = "ACCENT_I";
         };
+
+        accent_u: accent_u {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LEFT_BRACKET &kp U>;
+
+            label = "ACCENT_U";
+        };
+
+        accent_e: accent_e {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LEFT_BRACKET &kp E>;
+
+            label = "ACCENT_E";
+        };
+
+        accent_A: accent_A {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LEFT_BRACKET &kp E>;
+
+            label = "ACCENT_A";
+        };
     };
 
     combos {
@@ -39,6 +63,56 @@
         accentI {
             bindings = <&accent_i>;
             key-positions = <10 21>;
+        };
+
+        accentU {
+            bindings = <&accent_u>;
+            key-positions = <10 8>;
+        };
+
+        accentE {
+            bindings = <&accent_e>;
+            key-positions = <10 20>;
+        };
+
+        accentA {
+            bindings = <&accent_A>;
+            key-positions = <10 13>;
+        };
+
+        d {
+            bindings = <&kp D>;
+            key-positions = <14 15>;
+        };
+
+        g {
+            bindings = <&kp G>;
+            key-positions = <14 3>;
+        };
+
+        b {
+            bindings = <&kp B>;
+            key-positions = <25 26>;
+        };
+
+        h {
+            bindings = <&kp H>;
+            key-positions = <19 20>;
+        };
+
+        j {
+            bindings = <&kp J>;
+            key-positions = <20 9>;
+        };
+
+        b2 {
+            bindings = <&kp B>;
+            key-positions = <32 31>;
+        };
+
+        num {
+            bindings = <&tog 2>;
+            key-positions = <39 37>;
         };
     };
 
