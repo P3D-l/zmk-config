@@ -14,8 +14,17 @@
         accent_o: accent_o {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_BRACKET &kp O>;
+            bindings = <&macro_tap>, <&kp LEFT_BRACKET &kp O>;
+
             label = "ACCENT_O";
+        };
+
+        accent_i: accent_i {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&macro_tap>, <&kp LEFT_BRACKET &kp I>;
+
+            label = "ACCENT_I";
         };
     };
 
