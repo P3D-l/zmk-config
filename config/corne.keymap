@@ -10,6 +10,15 @@
 #include <dt-bindings/zmk/pointing.h>
 
 / {
+    macros {
+        accent_o: accent_o {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_BRACKET &kp O>;
+            label = "ACCENT_O";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
