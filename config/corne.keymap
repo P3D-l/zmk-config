@@ -12,7 +12,6 @@
 / {
     keymap {
         compatible = "zmk,keymap";
-        CONFIG_ZMK_POINTING = y;
 
         default_layer {
             // -----------------------------------------------------------------------------------------
