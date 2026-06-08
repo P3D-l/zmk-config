@@ -46,7 +46,7 @@
         accent_A: accent_A {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&macro_tap>, <&kp LEFT_BRACKET &kp E>;
+            bindings = <&macro_tap>, <&kp LEFT_BRACKET &kp A>;
 
             label = "ACCENT_A";
         };
