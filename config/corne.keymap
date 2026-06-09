@@ -87,7 +87,7 @@
 
         g {
             bindings = <&kp G>;
-            key-positions = <14 3>;
+            key-positions = <15 4>;
         };
 
         b {
@@ -133,7 +133,7 @@
             #binding-cells = <0>;
             bindings = <&kp C>, <&kp SEMICOLON>;
 
-            tapping-term-ms = <90>;
+            tapping-term-ms = <200>;
         };
     };
 
@@ -148,10 +148,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp F     &kp P  &mmv MOVE_LEFT     &mmv MOVE_UP    &kp L      &kp U     &kp Y    &kp SQT    &kp BSPC
-&kp LSHFT  &kp A  &kp R  &kp S     &kp T  &mmv MOVE_RIGHT    &mmv MOVE_DOWN  &kp N      &kp E     &kp I    &kp O      &kp CAPSLOCK
-&kp LCTRL  &kp Z  &kp X  &cedilha  &kp V  &msc SCRL_DOWN     &mkp LCLK       &kp K      &kp M     &kp DOT  &kp COMMA  &kp ESC
-                         &kp LGUI  &sl 1  &kp RET            &mo 3           &kp SPACE  &kp LALT
+&kp TAB    &kp Q  &kp W  &kp F          &kp P  &mmv MOVE_LEFT     &mmv MOVE_UP    &kp L      &kp U     &kp Y    &kp SQT    &kp BSPC
+&kp LSHFT  &kp A  &kp R  &kp S          &kp T  &mmv MOVE_RIGHT    &mmv MOVE_DOWN  &kp N      &kp E     &kp I    &kp O      &kp CAPSLOCK
+&kp LCTRL  &kp Z  &kp X  &kp SEMICOLON  &kp V  &msc SCRL_DOWN     &mkp LCLK       &kp K      &kp M     &kp DOT  &kp COMMA  &kp ESC
+                         &kp LGUI       &sl 1  &kp RET            &mo 3           &kp SPACE  &kp LALT
             >;
         };
 
