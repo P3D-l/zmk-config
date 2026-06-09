@@ -92,7 +92,7 @@
 
         b {
             bindings = <&kp B>;
-            key-positions = <25 26>;
+            key-positions = <27 28>;
         };
 
         h {
@@ -114,6 +114,27 @@
             bindings = <&tog 2>;
             key-positions = <39 37>;
         };
+
+        slash {
+            bindings = <&kp SLASH>;
+            key-positions = <41 1>;
+        };
+
+        questionmark {
+            bindings = <&kp QUESTION>;
+            key-positions = <41 2>;
+        };
+    };
+
+    behaviors {
+        cedilha: cedilha {
+            compatible = "zmk,behavior-tap-dance";
+            label = "CEDILHA";
+            #binding-cells = <0>;
+            bindings = <&kp C>, <&kp SEMICOLON>;
+
+            tapping-term-ms = <90>;
+        };
     };
 
     keymap {
@@ -127,10 +148,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp F     &kp P  &kp G      &kp J  &kp L      &kp U     &kp Y    &kp SQT    &kp BSPC
-&kp LSHFT  &kp A  &kp R  &kp S     &kp T  &kp D      &kp H  &kp N      &kp E     &kp I    &kp O      &kp CAPSLOCK
-&kp LCTRL  &kp Z  &kp X  &kp C     &kp V  &kp B      &kp B  &kp K      &kp M     &kp DOT  &kp COMMA  &kp ESC
-                         &kp LGUI  &sl 1  &kp RET    &mo 3  &kp SPACE  &kp LALT
+&kp TAB    &kp Q  &kp W  &kp F     &kp P  &mmv MOVE_LEFT     &mmv MOVE_UP    &kp L      &kp U     &kp Y    &kp SQT    &kp BSPC
+&kp LSHFT  &kp A  &kp R  &kp S     &kp T  &mmv MOVE_RIGHT    &mmv MOVE_DOWN  &kp N      &kp E     &kp I    &kp O      &kp CAPSLOCK
+&kp LCTRL  &kp Z  &kp X  &cedilha  &kp V  &msc SCRL_DOWN     &mkp LCLK       &kp K      &kp M     &kp DOT  &kp COMMA  &kp ESC
+                         &kp LGUI  &sl 1  &kp RET            &mo 3           &kp SPACE  &kp LALT
             >;
         };
 
