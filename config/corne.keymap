@@ -116,12 +116,12 @@
         };
 
         slash {
-            bindings = <&kp SLASH>;
+            bindings = <&kp RA(Q)>;
             key-positions = <41 1>;
         };
 
         questionmark {
-            bindings = <&kp QUESTION>;
+            bindings = <&kp RA(W)>;
             key-positions = <41 2>;
         };
     };
