@@ -98,7 +98,6 @@
         h {
             bindings = <&kp H>;
             key-positions = <19 20>;
-            require-prior-idle-ms = <125>;
         };
 
         j {
