@@ -132,17 +132,6 @@
         };
     };
 
-    behaviors {
-        cedilha: cedilha {
-            compatible = "zmk,behavior-tap-dance";
-            label = "CEDILHA";
-            #binding-cells = <0>;
-            bindings = <&kp C>, <&kp SEMICOLON>;
-
-            tapping-term-ms = <150>;
-        };
-    };
-
     keymap {
         compatible = "zmk,keymap";
 
