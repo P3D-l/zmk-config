@@ -127,7 +127,7 @@
 
         cidilha {
             bindings = <&kp SEMICOLON>;
-            key-positions = <41 27>;
+            key-positions = <27 26>;
         };
     };
 
